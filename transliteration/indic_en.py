@@ -27,6 +27,7 @@ Trying to make indic_en transliteration more generic
 '''
 __all__ = ['kannada_english_dict', 'kn_vowels', 'kn_vowel_signs', \
         'malayalam_english_dict', 'ml_vowels', 'ml_vowel_signs', \
+        'urdu_english_dict', 'ur_vowels', 'ur_vowel_signs', \
         'language_dictionary', 'language_vowels', 'language_vowel_signs', \
         'language_virama', 'language_anuswara', 'get_dictionary_for', \
         'get_anuswara_for', 'get_vowels_for', 'get_virama_for', \
@@ -78,6 +79,20 @@ ml_vowels = [u'അ', u'ആ', u'ഇ', u'ഈ', u'ഉ', u'ഊ', u'ഋ', u'എ', u'�
 ml_vowel_signs = [u'്', u'ം', u'ാ', u'ി', u'ീ', u'ു', u'ൂ', u'ൃ', u'െ', u'േ', \
         u'ൈ', u'ൊ', u'ോ', u'ൗ',  u'ൌ', u'‍']
 
+urdu_english_dict = { \
+        u'ا':'-', u'ب':'b', u'پ':'p', u'ت':'t', u'ٹ':'ṭ', u'ث':'s', \
+        u'ج':'j', u'چ':'ch', u'ح':'h', u'خ':'kh', u'د':'d', u'ڈ':'ḍ', \
+        u'ذ':'dh', u'ر':'r', u'ڑ':'ṛ', u'ز':'z', u'ژ':'zh', u'س':'s', \
+        u'ش':'sh', u'ص':'ṣ', u'ض':'z̤', u'ط':'t', u'ظ':'ẓ', u'ع':"'", \
+        u'غ':'gh', u'ف':'f', u'ق':'q', u'ک':'k', u'گ':'g', u'ل':'l', \
+        u'م':'m', u'ن':'n', u'و':'v', u'ہ':'h', u'ھ':'h', u'ء':"'", \
+        u'ی':'i', u'ے':'e', \
+        u'۱':'1', u'۲':'2', u'۳':'3', u'۴':'4', u'۵':'5', u'۶':'6', \
+        u'۷':'7', u'۸':'8', u'۹':'9', u'۰':'0'
+        }
+ur_vowels = [u'ا', u'و', u'ی', u'ے', ]
+ur_vowel_signs = [u'آ', u' ']
+
 
 # P.S: Please declare all language related variables above this and
 # fill in the following mapping as you add dictionary vowels and
@@ -86,14 +101,16 @@ ml_vowel_signs = [u'്', u'ം', u'ാ', u'ി', u'ീ', u'ു', u'ൂ', u'ൃ'
 
 # language dictionary mapping
 language_dictionary = {"kn_IN": kannada_english_dict, \
-                           "ml_IN": malayalam_english_dict}
+                           "ml_IN": malayalam_english_dict, \
+                                "ur_IN": urdu_english_dict}
 
 # language vowels mapping
-language_vowels = {"kn_IN": kn_vowels, "ml_IN": ml_vowels}
+language_vowels = {"kn_IN": kn_vowels, "ml_IN": ml_vowels, "ur_IN": ur_vowels}
 
 # language vowel signs mapping
 language_vowel_signs = {"kn_IN": kn_vowel_signs, \
-                            "ml_IN": ml_vowel_signs}
+                            "ml_IN": ml_vowel_signs, \
+                                "ur_IN": ur_vowel_signs}
 
 # language virama sign mapping
 language_virama = {"kn_IN": u"್", "ml_IN": u"്"}

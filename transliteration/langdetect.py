@@ -75,6 +75,9 @@ def _detect_lang(text):
                 if ((ord(letter) >= 0x0C00) & (ord(letter) <= 0x0C7F)):
                     result_dict[orig_word] = "te_IN"
                     break
+                if ((ord(letter) >= 0x0600) & (ord(letter) <= 0x06FF)):
+                    result_dict[orig_word] = "ur_IN"
+                    break
                 if ((letter <= u'z')):  # this is fallback case.
                     result_dict[orig_word] = "en_US"
                     break
