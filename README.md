@@ -8,12 +8,8 @@ How to Run?
 ===========
 
 	`from transliteration import transliterate`
-
 	` t = transliterate.Transliterator.get_instance()`
-
 	` text = u"ನಮಸ್ಕಾರ"`
-
 	` t_text = t.transliterate(text,"ml")`
-	
 	` print t_text #"നമസ്കാര"`
 
