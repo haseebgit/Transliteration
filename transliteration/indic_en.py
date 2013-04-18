@@ -113,9 +113,9 @@ language_vowel_signs = {"kn_IN": kn_vowel_signs, \
                                 "ur_IN": ur_vowel_signs}
 
 # language virama sign mapping
-language_virama = {"kn_IN": u"್", "ml_IN": u"്"}
+language_virama = {"kn_IN": u"್", "ml_IN": u"്", "ur_IN": u"ِ", "ur_IN": u"َ"}
 # language anuswara sign mapping
-language_anuswara = {"kn_IN": u"ಂ", "ml_IN": u'ം'}
+language_anuswara = {"kn_IN": u"ಂ", "ml_IN": u'ം', "ur_IN": u'ٰٰٰٰٰٰٰٰٰ ٰ'}
 
 
 def get_dictionary_for(lang="ml_IN"):
