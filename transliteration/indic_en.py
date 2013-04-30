@@ -80,18 +80,18 @@ ml_vowel_signs = [u'്', u'ം', u'ാ', u'ി', u'ീ', u'ു', u'ൂ', u'ൃ'
         u'ൈ', u'ൊ', u'ോ', u'ൗ',  u'ൌ', u'‍']
 
 urdu_english_dict = { \
-        u'ا':'-', u'ب':'b', u'پ':'p', u'ت':'t', u'ٹ':'ṭ', u'ث':'s', \
-        u'ج':'j', u'چ':'ch', u'ح':'h', u'خ':'kh', u'د':'d', u'ڈ':'ḍ', \
-        u'ذ':'dh', u'ر':'r', u'ڑ':'ṛ', u'ز':'z', u'ژ':'zh', u'س':'s', \
-        u'ش':'sh', u'ص':'ṣ', u'ض':'z̤', u'ط':'t', u'ظ':'ẓ', u'ع':"'", \
-        u'غ':'gh', u'ف':'f', u'ق':'q', u'ک':'k', u'گ':'g', u'ل':'l', \
-        u'م':'m', u'ن':'n', u'و':'v', u'ہ':'h', u'ھ':'h', u'ء':"'", \
-        u'ی':'i', u'ے':'e', \
+        u'ا':'-', u'ب':'be', u'پ':'pe', u'ت':'te', u'ٹ':'Te', u'ث':'se', \
+        u'ج':'jim', u'چ':'ce', u'ح':'He', u'خ':'khe', u'د':'dal', u'ڈ':'Dal', \
+        u'ذ':'zal', u'ر':'re', u'ڑ':'Re', u'ز':'ze', u'ژ':'zye', u'س':'sin', \
+        u'ش':'Sin', u'ص':'ṣuad', u'ض':'zuad', u'ط':'toe', u'ظ':'ẓoe', u'ع':'ain', \
+        u'غ':'gain', u'ف':'fe', u'ق':'qaf', u'ک':'kaf', u'گ':'gaf', u'ل':'lam', \
+        u'م':'mim', u'ن':'nun', u'و':'vao', u'ہ':'he', u'ھ':'he', u'ء':'hamza', \
+        u'ی':'ye', u'ے':'Ye', \
         u'۱':'1', u'۲':'2', u'۳':'3', u'۴':'4', u'۵':'5', u'۶':'6', \
         u'۷':'7', u'۸':'8', u'۹':'9', u'۰':'0'
         }
 ur_vowels = [u'ا', u'و', u'ی', u'ے', ]
-ur_vowel_signs = [u'آ', u' ']
+ur_vowel_signs = [u'ِ', u'َ', u' ٰ']
 
 
 # P.S: Please declare all language related variables above this and
@@ -113,9 +113,9 @@ language_vowel_signs = {"kn_IN": kn_vowel_signs, \
                                 "ur_IN": ur_vowel_signs}
 
 # language virama sign mapping
-language_virama = {"kn_IN": u"್", "ml_IN": u"്", "ur_IN": u"ِ", "ur_IN": u"َ"}
+language_virama = {"kn_IN": u"್", "ml_IN": u"്" }
 # language anuswara sign mapping
-language_anuswara = {"kn_IN": u"ಂ", "ml_IN": u'ം', "ur_IN": u'ٰٰٰٰٰٰٰٰٰ ٰ'}
+language_anuswara = {"kn_IN": u"ಂ", "ml_IN": u'ം' }
 
 
 def get_dictionary_for(lang="ml_IN"):

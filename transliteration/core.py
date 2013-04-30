@@ -33,7 +33,7 @@ from langdetect import _detect_lang
 lang_bases = { \
         'en_US': 0, 'en_IN': 0, 'hi_IN': 0x0901, 'bn_IN': 0x0981, \
         'pa_IN': 0x0A01, 'gu_IN': 0x0A81, 'or_IN': 0x0B01, 'ta_IN': 0x0B81, \
-        'te_IN': 0x0C01, 'kn_IN': 0x0C81, 'ml_IN': 0x0D01, 'ur_IN':0x0601, \
+        'te_IN': 0x0C01, 'kn_IN': 0x0C81, 'ml_IN': 0x0D01, 'ur_IN': 0x0601, \
         }
 
 
