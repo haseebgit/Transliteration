@@ -13,13 +13,13 @@ class TransliterationTest(unittest.TestCase):
 
 	def testUrduToEnglish(self):
 		result = self.t.transliterate(self.ur,"en_US")
-	print result.encode('utf-8')
+		print result.encode('utf-8')
 		self.assertEqual(result.strip(),u"meyka irr hepan")
 
 
 	def testEnglishToUrdu(self):
 		result = self.t.transliterate(self.en,"ur_IN")
-	print result.encode('utf-8')
+		print result.encode('utf-8')
 		self.assertEqual(result.strip(),u"ئؿظٍ ؇ظٍ ؅ ؇ٍٍؙؗزؿطٍ رٍرنٍؕظٍرٍرٍ ثًذٍ")
 
 
