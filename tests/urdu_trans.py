@@ -14,7 +14,7 @@ class TransliterationTest(unittest.TestCase):
 	def testUrduToEnglish(self):
 		result = self.t.transliterate(self.ur,"en_US")
 		print result.encode('utf-8')
-		self.assertEqual(result.strip(),u"meyka irr hepan")
+		self.assertEqual(result.strip(),u"meyk irr hepan")
 
 
 	def testEnglishToUrdu(self):
